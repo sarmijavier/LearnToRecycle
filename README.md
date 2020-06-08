@@ -12,5 +12,5 @@
 # We did a machine learning model, of which has the ability to predict different type of trash(paper, bottles, metal, glass, 
 # cardboard and garbage), later we did a page in Flask framework where the user can create an account and to predict their trash.
 
-![](imagenesProyecto/imagenes (1).png) 
+![](imagenesProyecto/imagenes1.png) 
  
