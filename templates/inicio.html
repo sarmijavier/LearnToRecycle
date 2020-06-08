@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='inicio.css')}}" /> -->
+    <link rel="stylesheet" href="../static/style/inicio.css" />
+    <title>LearToRecycle</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{{url_for('inicio')}}">Learn To Recycle</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('inicio')}}"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('login')}}">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="container">
+      <h1>LEARN TO RECYCLE</h1>
+      <a id="reciclar" type="submit" href="{{url_for('login')}}">RECYCLE</a>
+      <div id="img"></div>
+      <div id="texto">
+        <p>
+          Recycling not only conserves raw materials, but it also protects the
+          environment, saves energy, and reduces waste levels at landfill sites.
+        </p>
+      </div>
+      <div id="canecas"></div>
+      <div id="intermedio">
+        <h1 id="textoH1">Pollution in ocean</h1>
+      </div>
+
+      <div id="tortuga"></div>
+      <div id="textoTorguta">
+        <p>
+          Plastic pollution is a global problem that is growing exponentially
+          due to both an increase in consumerism and an increase in the number
+          of plastics used to manufacture the things we use on a daily basis.
+        </p>
+      </div>
+
+      <div id="delfin"></div>
+      <div id="textoDelfin">
+        <p>
+          80% of this plastic garbage comes from land, while the remaining 20%
+          comes from marine sources, such as pieces of nets and other gear left
+          in the water by fishing vessel fleets, according to the Environment
+          agency of the ONU
+        </p>
+      </div>
+
+      <div id="problematica">
+        <h1 id="proble">Problematic</h1>
+        <p id="textoProble">
+          Latin America presents alarming and discouraging figures in the
+          practice of recycling. No country exceeds 15% of recycled material for
+          the garbage they produce per year.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

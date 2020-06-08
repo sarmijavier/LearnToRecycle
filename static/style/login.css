@@ -1,0 +1,87 @@
+#contenedor {
+  background-image: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/*Cuerpo*/
+div.contenedor {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(203, 203, 203, 1) 0%,
+    rgba(223, 223, 223, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+div.contenedor-partes {
+  width: 30rem;
+  height: 31.55rem;
+  margin: 2rem auto;
+  -webkit-box-shadow: 4px 3px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 3px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 3px 16px -5px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  display: flex;
+  border: none;
+}
+
+/*Dinamico*/
+div.dinamico {
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 204, 204, 1) 100%
+  );
+}
+
+div.dinamico legend {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+button.btnSendIni1 {
+  width: 150px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 9px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+#google {
+  color: white;
+  background-color: red;
+  margin-left: 165px;
+}
+#face {
+  color: white;
+  background-color: #4267b2;
+  margin-left: 165px;
+}
+#github {
+  color: white;
+  background-color: #2b3137;
+  margin-left: 165px;
+}
+#enviar {
+  margin-top: 40px;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  color: white;
+  background-color: #2b9348;
+  margin-left: 165px;
+  border-radius: 9px;
+  border: 2px solid black;
+}

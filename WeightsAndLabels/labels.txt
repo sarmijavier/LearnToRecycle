@@ -1,0 +1,6 @@
+basura
+botellas
+carton
+metal
+papel
+vidrio

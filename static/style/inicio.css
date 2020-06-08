@@ -1,0 +1,165 @@
+body,
+html {
+  padding: 0;
+}
+#container {
+  background-image: url("../img/index3.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 91%;
+}
+#problec {
+  font-size: 20px;
+  color: black;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 265px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#reciclar {
+  text-align: center;
+  margin-top: 110px;
+  margin-left: 41%;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 29px;
+  opacity: 0.5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #50bda1;
+  color: white;
+  font-weight: 1000;
+  margin-bottom: 50px;
+}
+
+#img {
+  background-image: url("../img/indexSecond.jpg");
+  width: 50%;
+  height: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 80%;
+  margin-left: 90px;
+}
+
+#texto {
+  text-align: justify;
+  margin-left: 700px;
+  margin-right: 80px;
+  margin-top: 90px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+#canecas {
+  background-image: url("../img/groupCanecas.png");
+  width: 90%;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin-top: 180px;
+  margin-left: 80px;
+}
+
+#intermedio {
+  background-image: url("../img/indexBotella.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#textoH1 {
+  margin-top: 80px;
+  font-weight: 1000;
+  font-size: 70px;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#tortuga {
+  background-image: url("../img/tortuga.jpg");
+  margin-top: 600px;
+  width: 50%;
+  height: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 70%;
+  margin-left: 80px;
+}
+
+#textoTorguta {
+  text-align: justify;
+  margin-left: 600px;
+  margin-top: 650px;
+  width: 600px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+#delfin {
+  background-image: url("../img/delfin.jpg");
+  margin-top: 100px;
+  width: 50%;
+  height: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 70%;
+  margin-left: 650px;
+}
+
+#textoDelfin {
+  text-align: justify;
+  margin-left: 80px;
+  margin-top: 120px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 500px;
+  font-size: 30px;
+}
+
+#problematica {
+  background-image: url("../img/rio.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+#proble {
+  margin-top: 20px;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 1000;
+}
+
+#textoProble {
+  margin-top: 20px;
+  text-align: justify;
+  width: 70%;
+  font-size: 30px;
+  margin-left: 250px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+}
+footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  height: 47px;
+  background: rgba(51, 51, 51, 0.7);
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 47px;
+}
