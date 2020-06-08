@@ -13,4 +13,11 @@
 ## cardboard and garbage), later we did a page in Flask framework where the user can create an account and to predict their trash.
 
 ![](imagenesProyecto/imagenes1.png) 
+![](imagenesProyecto/imagenes2.png) 
+![](imagenesProyecto/imagenes3.png) 
+![](imagenesProyecto/imagenes4.png) 
+![](imagenesProyecto/imagenes5.png)
+![](imagenesProyecto/imagenes6.png)
+![](imagenesProyecto/imagenes7.png) 
+
  
