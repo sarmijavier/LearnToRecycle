@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style/about.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -13,8 +14,7 @@
       src="https://kit.fontawesome.com/d911bf9c08.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../static/style/login.css" />
-    <title>Login</title>
+    <title>About</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,45 +47,18 @@
         </ul>
       </div>
     </nav>
-    <div id="contenedor" class="contenedor">
-      <div class="contenedor-partes">
-        <div class="dinamico">
-          <!-- Botones -->
-          <legend>Log in</legend>
-
-          <button id="google" class="btnSendIni1" type="submit">
-            <i class="fab fa-google"></i> | Google</button
-          ><br />
-          <button id="face" class="btnSendIni1" type="submit">
-            <i class="fab fa-facebook-f"></i> | Facebook</button
-          ><br />
-          <button id="github" class="btnSendIni1" type="submit">
-            <i class="fab fa-github"></i> | GitHub</button
-          ><br />
-          <a
-            id="enviar"
-            class="btnSendIni1"
-            type="submit"
-            style="display: none;"
-            href="{{url_for('cuenta')}}"
-            ><i class="fas fa-external-link-alt"></i> | Enviar</a
-          >
-        </div>
+    <div id="contenedor">
+      <div id="img"></div>
+      <div id="texto">
+        <p>
+          we are students from the catholic university of Colombia, we are in
+          seventh semester, our mission is to teach to the people to recycle,
+          because we saw a big problem, of which is the people don't know to
+          recycle, so we decided attack this problem through of a machine
+          learning model and development web, besides we use the knowledge seen
+          in software construction and stochastics.
+        </p>
       </div>
     </div>
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Script firebase -->
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
-
-    <script type="text/javascript" src="../static/js/autenticacion.js"></script>
   </body>
 </html>

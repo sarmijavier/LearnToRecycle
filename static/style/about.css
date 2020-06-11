@@ -1,0 +1,44 @@
+#contenedor {
+  background: linear-gradient(
+    to bottom,
+    rgb(52, 58, 64) 0%,
+    rgb(131, 137, 143) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  position: absolute;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+  height: 91%;
+}
+#texto {
+  text-align: justify;
+  margin-left: 700px;
+  margin-right: 80px;
+  margin-top: 80px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: black;
+}
+#img {
+  background-image: url("../img/about.jpg");
+  width: 50%;
+  height: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 80%;
+  margin-left: 90px;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+#github {
+  margin-top: 40px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: #2b3137;
+  margin-left: 165px;
+  border-radius: 9px;
+  border: 2px solid black;
+}

@@ -33,6 +33,11 @@ def recicla():
     return render_template('recicla.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @app.route("/upload", methods=["POST"])
 def uploader():
     if request.method == "POST":
@@ -40,13 +45,8 @@ def uploader():
         filename = secure_filename(f.filename)
         f.save(os.path.join(app.config['imagenes'], filename))
         objeto = prueba()
-        respuesta = objeto.archivoCorrecto(filename,f)
-
-
-
-    return render_template('recicla.html', answers = respuesta)
-
-
+        respuesta = objeto.archivoCorrecto(filename, f)
+    return render_template('recicla.html', answers=respuesta)
 
 
 

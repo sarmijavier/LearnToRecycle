@@ -9,7 +9,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../static/style/reciclar.css" />
+    <link rel="stylesheet" href="../static/style/recicla.css" />
     <title>Recicla</title>
   </head>
   <body>
@@ -35,7 +35,7 @@
             >
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="{{url_for('about')}}">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url_for('login')}}">Login</a>
@@ -54,9 +54,20 @@
         <div id="visorArchivo"></div>
         <br />
         {% for answer in answers %}
-          <h1 style="color:black">{{answer}}</h1>
+          {% if (answer != 'Verde') and (answer != 'Azul') and (answer != 'Gris')   %}
+            <h1 style="color:black">{{answer}}</h1>
+          {% endif %}
+
+          {% if (answer == 'vidrio') or (answer == 'botellas') or (answer == 'metal')%}
+            <img style="width:300px" src="../static/img/azul.png" alt="imagen azul">
+          {% elif (answer == 'carton') or (answer == 'papel') %}
+            <img style="width:300px" src="../static/img/canecagis.png" alt="imagen gris">
+          {% elif (answer == 'basura') %}
+            <img style="width:300px" src="../static/img/canecaverde.png"  alt="imagen verde">
+          {% endif %}
         {% endfor %}
       </section>
+    </div>
     </form>
     <script type="text/javascript" src="../static/js/recicla.js"></script>
   </body>
