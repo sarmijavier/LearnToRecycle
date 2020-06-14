@@ -6,7 +6,7 @@ from keras import backend as k
 import numpy as np
 
 
-class Preddict:
+class Predict:
 
     def prediction(self,file):
         labels = {0: 'Trash', 1: 'Bottles', 2: 'Cardboard', 3: 'Metal', 4: 'Paper', 5: 'Glass'}
@@ -42,13 +42,12 @@ class Preddict:
 
 
         TotalPrediction = [max(prob),predicted_class,trashContainer]
-        print(TotalPrediction)
+
         return TotalPrediction
 
 
     def sliceVideo(self,nameOfVideo):
-        print('nombre del archivo')
-        print(nameOfVideo)
+
         fps = cv2.VideoCapture(f'./images/{nameOfVideo}')
 
         i = 0

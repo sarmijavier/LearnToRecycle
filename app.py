@@ -3,7 +3,7 @@ from flask import render_template, request
 from werkzeug.utils import secure_filename
 import os
 import shutil
-from prediction import Preddict
+from prediction import Predict
 
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
@@ -44,7 +44,7 @@ def uploader():
         f = request.files['archivo']
         filename = secure_filename(f.filename)
         f.save(os.path.join(app.config['images'], filename))
-        objeto = Preddict()
+        objeto = Predict()
         MainAnswer = objeto.typeOfFile(filename, f)
     return render_template('recicla.html', answers=MainAnswer)
 
