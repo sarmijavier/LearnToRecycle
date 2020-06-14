@@ -48,22 +48,22 @@
       <h1>Show me we are going to recycle!</h1>
       <section class="text-center">
         <input class="video" id="archivoInput" type="file" name="archivo"  onchange="validarExt()">
-        <button type="submit" id="Enviar" name="Enviar" >Enviar</button>
+        <button type="submit" id="Enviar" name="Enviar" >Send</button>
         <br />
         <br />
         <div id="visorArchivo"></div>
         <br />
         {% for answer in answers %}
-          {% if (answer != 'Verde') and (answer != 'Azul') and (answer != 'Gris')   %}
+          {% if (answer != 'Green Container Trash') and (answer != 'Blue Container Trash') and (answer != 'Gray Container Trash')   %}
             <h1 style="color:black">{{answer}}</h1>
           {% endif %}
 
-          {% if (answer == 'vidrio') or (answer == 'botellas') or (answer == 'metal')%}
-            <img style="width:300px" src="../static/img/azul.png" alt="imagen azul">
-          {% elif (answer == 'carton') or (answer == 'papel') %}
-            <img style="width:300px" src="../static/img/canecagis.png" alt="imagen gris">
-          {% elif (answer == 'basura') %}
-            <img style="width:300px" src="../static/img/canecaverde.png"  alt="imagen verde">
+          {% if (answer == 'Glass') or (answer == 'Bottles') or (answer == 'Metal')%}
+            <img style="width:150px" src="../static/img/azul.png" alt="imagen azul">
+          {% elif (answer == 'Cardboard') or (answer == 'Paper') %}
+            <img style="width:150px" src="../static/img/canecagis.png" alt="imagen gris">
+          {% elif (answer == 'Trash') %}
+            <img style="width:150px" src="../static/img/canecaverde.png"  alt="imagen verde">
           {% endif %}
         {% endfor %}
       </section>

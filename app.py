@@ -3,12 +3,12 @@ from flask import render_template, request
 from werkzeug.utils import secure_filename
 import os
 import shutil
-from prediction import prueba
+from prediction import Preddict
 
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
-app.config['imagenes'] = "./imagenes"
+app.config['images'] = "./images"
 
 
 @app.route('/')
@@ -23,8 +23,8 @@ def login():
 
 @app.route('/cuenta')
 def cuenta():
-    shutil.rmtree('imagenes')
-    os.mkdir('imagenes')
+    shutil.rmtree('images')
+    os.mkdir('images')
     return render_template('cuenta.html')
 
 
@@ -43,10 +43,10 @@ def uploader():
     if request.method == "POST":
         f = request.files['archivo']
         filename = secure_filename(f.filename)
-        f.save(os.path.join(app.config['imagenes'], filename))
-        objeto = prueba()
-        respuesta = objeto.archivoCorrecto(filename, f)
-    return render_template('recicla.html', answers=respuesta)
+        f.save(os.path.join(app.config['images'], filename))
+        objeto = Preddict()
+        MainAnswer = objeto.typeOfFile(filename, f)
+    return render_template('recicla.html', answers=MainAnswer)
 
 
 
