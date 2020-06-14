@@ -1,8 +1,8 @@
 # LearnToRecycle
 
 ## Members
-## Jhoan Sebastian Benavides Diaz
 ## Hairton Javier Sarmiento Yahuarcani
+## Jhoan Sebastian Benavides Diaz
 ## David Santiago Restrepo Valencia
 
 ### Project Goal
