@@ -43,49 +43,11 @@ test_generator=test.flow_from_directory(dir_path,
                                         subset='validation')
 
 
-# Image Pre Processing
-train=ImageDataGenerator(horizontal_flip=True,
-                         vertical_flip=True,
-                         validation_split=0.1,
-                         rescale=1./255,
-                         shear_range = 0.1,
-                         zoom_range = 0.1,
-                         width_shift_range = 0.1,
-                         height_shift_range = 0.1,)
-
-test=ImageDataGenerator(rescale=1/255,
-                        validation_split=0.1)
-
-train_generator=train.flow_from_directory(dir_path,
-                                          target_size=(300,300),
-                                          batch_size=32,
-                                          class_mode='categorical',
-                                          subset='training')
-
-test_generator=test.flow_from_directory(dir_path,
-                                        target_size=(300,300),
-                                        batch_size=32,
-                                        class_mode='categorical',
-                                        subset='validation')
-
 labels = (train_generator.class_indices)
 print(labels)
 
 labels = dict((v,k) for k,v in labels.items())
 print(labels)
-
-for image_batch, label_batch in train_generator:
-  break
-image_batch.shape, label_batch.shape
-
-
-print (train_generator.class_indices)
-
-Labels = '\n'.join(sorted(train_generator.class_indices.keys()))
-
-with open('labels.txt', 'w') as f:
-  f.write(Labels)
-
 
 for image_batch, label_batch in train_generator:
   break
